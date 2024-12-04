@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.a1 {
+  animation: colorChange 1s infinite;
+}
+
+.b {
+  animation: colorChange 1s infinite 0.1s;
+}
+
+.d {
+  animation: colorChange 1s infinite 0.2s;
+}
+
+.r1 {
+  animation: colorChange 1s infinite 0.3s;
+}
+
+.r2 {
+  animation: colorChange 1s infinite 0.4s;
+}
+
+.a2 {
+  animation: colorChange 1s infinite 0.5s;
+}
+
+.h {
+  animation: colorChange 1s infinite 0.6s;
+}
+
+.m {
+  animation: colorChange 1s infinite 0.7s;
+}
+
+.e {
+  animation: colorChange 1s infinite 0.8s;
+}
+
+.n {
+  animation: colorChange 1s infinite 0.9s;
+}
+
+.dot {
+  color: red;
+  animation: blink 1s infinite;
+}
+
+.z {
+  animation: colorChange 1s infinite 1s;
+}
+
+/* Keyframes for color changing */
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
+
+/* Keyframes for dot blinking */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

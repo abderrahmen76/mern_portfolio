@@ -1,0 +1,133 @@
+/* Admin.css */
+.admin-dashboard {
+  background-color: #f0f2f5; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #001529; /* Ant Design primary color */
+}
+
+.ant-tabs-card .ant-tabs-tab {
+  background-color: #ffffff; /* White background for tabs */
+  border: 1px solid #f0f0f0; /* Border around tabs */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 8px; /* Spacing between tabs */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.ant-tabs-card .ant-tabs-tab-active {
+  background-color: #1890ff; /* Ant Design primary color */
+  color: white;
+}
+
+.ant-tabs-card .ant-tabs-tab:hover {
+  background-color: #40a9ff; /* Lighter blue for hover effect */
+}
+
+.ant-tabs-content-holder {
+  background: white; /* White background for content */
+  border: 1px solid #f0f0f0; /* Border around content */
+  padding: 16px; /* Padding inside the content area */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Content shadow */
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e3e3e3;
+}
+
+/* Form Container */
+.login-form-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading */
+.login-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 32px;
+}
+
+/* Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Submit Button */
+.login-btn {
+  padding: 12px 20px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #357ab7;
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 20px;
+  }
+
+  .login-heading {
+    font-size: 24px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
