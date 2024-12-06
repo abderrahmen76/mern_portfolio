@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const dbConfig = require("./config/dbconfig");
+const dbConfig = require("./config/dbConfig"); // Case-sensitive
 
 const portfolioRoute = require("./routes/portfolioRoutes");
 app.use(express.json());
