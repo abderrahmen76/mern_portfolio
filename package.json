@@ -12,6 +12,7 @@
     "client": "npm start --prefix my_portfolio",
     "dev": "concurrently \"npm run server\" \"npm run my_portfolio\"",
     "start": "node server.js",
+    "build": "npm run build --prefix my_portfolio",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix my_portfolio && npm run build --prefix my_portfolio"
   },
   "author": "",
