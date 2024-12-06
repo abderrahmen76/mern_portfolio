@@ -10,9 +10,9 @@ app.use("/api/portfolio", portfolioRoute);
 const port = process.env.PORT || 5000;
 const path = require("path");
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "my_portfolio/build")));
+  app.use(express.static(path.join(__dirname, "/my_portfolio/build")));
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "my_portfolio/build/index.html"));
+    res.sendFile(path.join(__dirname, "/my_portfolio/build/index.html"));
   });
 }
 app.listen(port, () => {
